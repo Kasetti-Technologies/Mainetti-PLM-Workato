@@ -1,0 +1,72 @@
+{
+    "JDE_ORCH_JDEIntegration_SupplierMaster_Main": [
+        {
+            "External_Id": "Workato-5678",
+            "Address_Number_AN8": "131570",
+            "Orch_F0101_Status": "Success",
+            "JDE_ORCH_JDEIntegration_F0111": [
+                {
+                    "Address_Number_AN8": "131570",
+                    "LineNumber_WWIDLN": "0",
+                    "Orch_F0111_Status": "Success"
+                },
+                {
+                    "Address_Number_AN8": "131570",
+                    "LineNumber_WWIDLN": "1",
+                    "Orch_F0111_Status": "Success"
+                },
+                {
+                    "Address_Number_AN8": "131570",
+                    "LineNumber_WWIDLN": "2",
+                    "Orch_F0111_Status": "Success"
+                }
+            ],
+            "JDE_ORCH_JDEIntegration_F0115": [
+                {
+                    "Address_Number_AN8": "131570",
+                    "LineNumber_WPRCK7": "1",
+                    "WhosWhoLine_WPIDLN": "0",
+                    "Orch_F0115_Status": "Success"
+                },
+                {
+                    "Address_Number_AN8": "131570",
+                    "LineNumber_WPRCK7": "2",
+                    "WhosWhoLine_WPIDLN": "1",
+                    "Orch_F0115_Status": "Success"
+                }
+            ],
+            "JDE_ORCH_JDEIntegration_F01151": [
+                {
+                    "Address_Number_AN8": "131570",
+                    "LineNumber_EARCK7": "1",
+                    "WhosWhoLine_EAIDIN": "0",
+                    "Orch_F01151_Status": "Success"
+                }
+            ],
+            "JDE_ORCH_JDEIntegration_F01161": [
+                {
+                    "Address_Number_AN8": "131570",
+                    "WhosWhoLine_WLIDLN": "0",
+                    "Orch_F01161_Status": "Success"
+                }
+            ],
+            "JDE_ORCH_JDEIntegration_F0401": {
+                "Address_Number_AN8": "131570",
+                "Orch_F0401_Status": "Success"
+            },
+            "JDE_ORCH_JDEIntegration_F0116": {
+                "Address_Number_AN8": "131570",
+                "Orch_F0116_Status": "Success"
+            },
+            "JDE_ORCH_JDEIntegration_F0030": {
+                "Address_Number_AN8": "131570",
+                "RecordType_AYBKTP": "V",
+                "Orch_F0030_Status": "Success"
+            }
+        }
+    ],
+    "jde__status": "SUCCESS",
+    "jde__startTimestamp": "2025-01-10T18:26:45.602+0800",
+    "jde__endTimestamp": "2025-01-10T18:26:48.607+0800",
+    "jde__serverExecutionSeconds": 3.005
+}

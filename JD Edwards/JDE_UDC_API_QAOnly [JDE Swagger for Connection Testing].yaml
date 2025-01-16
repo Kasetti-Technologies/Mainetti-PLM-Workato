@@ -1,0 +1,256 @@
+swagger: '2.0'
+info:
+  description: >-
+    This is the JD Edwards Orchestration server.
+
+    Enabling you to Collect, Filter, Analyze, and Act on Real-Time Data.  
+
+
+    You can find out more about the JD Edwards Orchestrations at
+    [LearnJDE](http://docs.oracle.com/cd/E84502_01/learnjde/orchestrator.html).
+  version: EnterpriseOne 9.2.8.0
+  title: JD Edwards EnterpriseOne
+host: orch.mainetti.com.hk:8182
+basePath: /jderest/v3/orchestrator
+schemes:
+  - https
+externalDocs:
+  description: JD Edwards EnterpriseOne Orchestrator
+  url: http://docs.oracle.com/cd/E84502_01/learnjde/orchestrator.html
+tags:
+  - name: Utility
+    description: 'Get User Defined Code by Product code, User defined code and Language Code (Testing)'
+paths:
+  /PUB_oRCH_0000_0004A:
+    post:
+      tags:
+        - Utility
+      summary: PUB_oRCH_0000_0004A
+      description: Get UDC List with Desc and rest field by SY,RT only
+      operationId: postPUB_oRCH_0000_0004A
+      consumes:
+        - application/json
+        - application/xml
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: body
+          name: body
+          description: Object for Orchestration Execution
+          required: true
+          schema:
+            $ref: '#/definitions/ORC_2310200003MT'
+      responses:
+        '200':
+          description: Successful Execution
+          schema:
+            $ref: '#/definitions/ORC_2310200003MT_Output'
+        '400':
+          description: Bad Request - Invalid Input
+        '403':
+          description: Authorization Failure
+          schema:
+            $ref: '#/definitions/ERROR'
+        '406':
+          description: Invalid Accept Header
+        '415':
+          description: Invalid Content-Type Header
+        '444':
+          description: Invalid Token
+          schema:
+            $ref: '#/definitions/ERROR'
+        '500':
+          description: Server Failed to Process Request
+          schema:
+            $ref: '#/definitions/ERROR'
+      security:
+        - basicAuth: []
+    get:
+      tags:
+        - Utility
+      summary: PUB_oRCH_0000_0004A
+      description: Get UDC List with Desc and rest field by SY,RT only
+      operationId: getPUB_oRCH_0000_0004A
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - in: query
+          name: Product_Code
+          required: true
+          type: string
+        - in: query
+          name: UDC_Code
+          required: true
+          type: string
+        - in: query
+          name: Language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Execution
+          schema:
+            $ref: '#/definitions/ORC_2310200003MT_Output'
+        '400':
+          description: Bad Request - Invalid Input
+        '403':
+          description: Authorization Failure
+          schema:
+            $ref: '#/definitions/ERROR'
+        '406':
+          description: Invalid Accept Header
+        '415':
+          description: Invalid Content-Type Header
+        '444':
+          description: Invalid Token
+          schema:
+            $ref: '#/definitions/ERROR'
+        '500':
+          description: Server Failed to Process Request
+          schema:
+            $ref: '#/definitions/ERROR'
+      security:
+        - basicAuth: []
+definitions:
+  ORC_2310200003MT:
+    type: object
+    properties:
+      Product_Code:
+        type: string
+        example: string
+      UDC_Code:
+        type: string
+        example: string
+      Language:
+        type: string
+        example: string
+    required:
+      - Product_Code
+      - UDC_Code
+    xml:
+      name: PUB_oRCH_0000_0004A
+  ORC_2310200003MTGrid_UDC_LIST_RowSet:
+    type: object
+    properties:
+      Product_Code:
+        type: string
+        example: string
+      UDC_Code:
+        type: string
+        example: string
+      UDC_Key:
+        type: string
+        example: string
+      Language:
+        type: string
+        example: string
+      DESC01E:
+        type: string
+        example: string
+      Special Handling:
+        type: string
+        example: string
+        xml:
+          name: Special_Handling
+      DESC02E:
+        type: string
+        example: string
+      Hard Codes:
+        type: string
+        example: string
+        xml:
+          name: Hard_Codes
+      DESC01C:
+        type: string
+        example: string
+      DESC02C:
+        type: string
+        example: string
+    xml:
+      name: rowset
+  ORC_2310200003MT_Output:
+    type: object
+    properties:
+      UDC_LIST:
+        properties:
+          tableId:
+            type: string
+            example: string
+          rowset:
+            type: array
+            items:
+              $ref: '#/definitions/ORC_2310200003MTGrid_UDC_LIST_RowSet'
+            xml:
+              name: rowset
+          records:
+            type: integer
+            example: 0
+          moreRecords:
+            type: boolean
+            example: true
+      jde__status:
+        type: string
+        example: string
+      jde__startTimestamp:
+        type: string
+        example: 2024-12-04T13:54:01.122+0800
+        format: date-time
+      jde__endTimestamp:
+        type: string
+        example: 2024-12-04T13:54:01.122+0800
+        format: date-time
+      jde__serverExecutionSeconds:
+        type: number
+        example: 0
+    xml:
+      name: PUB_oRCH_0000_0004A
+  CONTINUED_ON_ERROR:
+    type: object
+    properties:
+      step:
+        type: string
+        example: string
+      iteration:
+        type: integer
+        example: 0
+      message:
+        type: string
+        example: string
+      timeStamp:
+        type: string
+        example: 2024-12-04T13:54:01.122+0800
+        format: date-time
+      userDefinedErrorText:
+        type: string
+        example: string
+      type:
+        type: string
+        example: string
+      exceptionProcessResponse:
+        type: object
+    xml:
+      name: continuedOnError
+  ERROR:
+    type: object
+    properties:
+      message:
+        type: string
+        example: string
+      exception:
+        type: string
+        example: string
+      timestamp:
+        type: string
+        example: 2024-12-04T13:54:01.122+0800
+        format: date-time
+  jde__notification_Output:
+    type: object
+    properties:
+      success:
+        type: boolean
+        example: true
+securityDefinitions:
+  basicAuth:
+    type: basic

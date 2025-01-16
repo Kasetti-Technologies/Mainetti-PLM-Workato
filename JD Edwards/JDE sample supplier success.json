@@ -1,0 +1,93 @@
+{
+    "Supplier_list": [
+        {
+            "External_Id": "Workato-5678",
+            "BasicAddressBookInfo_F0101": {
+                "LongAddressNumber_ABALKY": "台灣台北市中正區忠孝東路一段 900 號",
+                "TaxID_ABTAX": "6789012345",
+                "AlphaName_ABALPH": "今天天氣好有限公司",
+                "NameDescription_ABDC": "今天天氣好有限公司",
+                "BusinessUnit_ABMCU": "45240",
+                "SearchType_ABAT1": "V",
+                "ARAPNetting_ABAT2": "N",
+                "AddressType_ABATP": "Y",
+                "AddTaxID_ABTX2": "6789012345"
+            },
+            "WhosWhoInfo_F0111": [
+                {
+                    "LineNumber_WWIDLN": 0,
+                    "MailingName_WWMLNM": "今天天氣好有限公司",
+                    "Title_WWATTL": "",
+                    "SalutationName_WWSLNM": "",
+                    "TypeCode_WWTYC": ""
+                },
+                {
+                    "LineNumber_WWIDLN": 1,
+                    "MailingName_WWMLNM": "张伟",
+                    "Title_WWATTL": "門市经理",
+                    "SalutationName_WWSLNM": "先生",
+                    "TypeCode_WWTYC": "A"
+                },
+                {
+                    "LineNumber_WWIDLN": 2,
+                    "MailingName_WWMLNM": "刘燕",
+                    "Title_WWATTL": "人事部主管",
+                    "SalutationName_WWSLNM": "女士",
+                    "TypeCode_WWTYC": "B"
+                }
+            ],
+            "APinfo_F0401": {
+                "GLOffset_A6APC": "TRB",
+                "APCurrency_A6CRRP": "HKD",
+                "TaxRate_A6TXA2": "JP08VAT",
+                "TaxExplCode_A6EXR2": "AR",
+                "PaymentTerms_A6TRAP": "00L",
+                "PreNoteCode_A6AB1": "P",
+                "ABCurrency_A6CRCA": "HKD"
+            },
+            "PhoneInfo_F0115": [
+                {
+                    "LineNumber_WPRCK7": 1,
+                    "WhosWhoLine_WPIDLN": 0,
+                    "RelatedPerson_WPCNLN": 0,
+                    "PhoneNumber_WPPH1": "021 12345678"
+                },
+                {
+                    "LineNumber_WPRCK7": 2,
+                    "WhosWhoLine_WPIDLN": 1,
+                    "RelatedPerson_WPCNLN": 0,
+                    "PhoneNumber_WPPH1": "021 87654321"
+                }
+            ],
+            "EmailInfo_F01151": [
+                {
+                    "LineNumber_EARCK7": 1,
+                    "WhosWhoLine_EAIDIN": 0,
+                    "ElectronicType_EAETP": "E",
+                    "ElectronicAddress_EAEMAL": "contact@shzdtech.com"
+                }
+            ],
+            "AddressInfo_F0116": {
+                "EffectiveBeginning_ALEFTB": 0,
+                "BusinessAddress_ALADD1": "台灣台北市",
+                "Country_ALCTR": "CN"
+            },
+            "AlternateAddressInfo_F01161": [
+                {
+                    "WhosWhoLine_WLIDLN": 0,
+                    "EffectiveBeginning_WLEFTB": 0,
+                    "AddressLine1_WLADD1": "中正區忠孝東路一段 900 號",
+                    "Country_WLCTR": "CN"
+                }
+            ],
+            "BankInfo_F0030": {
+                "RecordType_AYBKTP": "V",
+                "BankTransitNumber_AYTNST": "台灣國立银行",
+                "BankAccountNumber_AYCBNK": "678901234567890",
+                "BankDescription_AYDL01": "台中分行",
+                "InternationalBankAccountNumber_AYIBAN": "GB29NWBK60161331926819",
+                "Country_AYCTR": "CN"
+            }
+        }
+    ]
+}
