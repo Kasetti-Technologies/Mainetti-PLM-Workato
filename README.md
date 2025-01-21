@@ -18,6 +18,9 @@ Ref Centric Shadow Table Sample JSON: Centric\Centric Shadow Table.json
 Link: https://github.com/Kasetti-Technologies/Mainetti-PLM-Workato/blob/main/Centric%20Shadow%20Table.json
 
 Doc Ref:
-Supplier Shadow Table REST API: https://docs.google.com/document/d/1Sv0ZFh5yuS7TKHU59Grv8zDemJ2fOke6/edit
-Supplier Shadow Table Rest API 2: https://docs.google.com/document/d/1rltwrcGO-d0TC3tWT-0tCG3vA6q5U1pc/edit?usp=drive_link&ouid=114462600381337779852&rtpof=true&sd=true
-Material Shadow Table REST API: https://docs.google.com/document/d/1qS8K4WS35DxHzEr4LLoxLZNA-cetwOPO/edit?usp=drive_link&ouid=114462600381337779852&rtpof=true&sd=true
+Supplier Shadow Table REST API: 
+https://docs.google.com/document/d/1Sv0ZFh5yuS7TKHU59Grv8zDemJ2fOke6/edit
+Supplier Shadow Table Rest API 2: 
+https://docs.google.com/document/d/1rltwrcGO-d0TC3tWT-0tCG3vA6q5U1pc/edit?usp=drive_link&ouid=114462600381337779852&rtpof=true&sd=true
+Material Shadow Table REST API: 
+https://docs.google.com/document/d/1qS8K4WS35DxHzEr4LLoxLZNA-cetwOPO/edit?usp=drive_link&ouid=114462600381337779852&rtpof=true&sd=true
